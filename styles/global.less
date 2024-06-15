@@ -28,12 +28,12 @@ p {
 @change-body-color-duration: 2s;
 .body-color-1 {
   transition: all @change-body-color-duration ease-in-out;
-  background-color: #f3ff90;
+  background-color: #cab261;
 }
 
 .body-color-2 {
   transition: all @change-body-color-duration ease-in-out;
-  background-color: #050c9c;
+  background-color: #67b9f0;
 }
 
 .body-color-3 {
@@ -60,6 +60,13 @@ p {
   a {
     color: @secondary-color;
     text-decoration: none;
+    transition: all 300ms ease-in-out;
+
+    &:hover {
+      font-size: 1.2em;
+      transition: all 300ms ease-in-out;
+      text-decoration: underline;
+    }
   }
 
   .navbar-brand {
